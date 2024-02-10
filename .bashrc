@@ -6,13 +6,10 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias ll='ls -l'
+alias la='ls -al'
+alias vim='nvim'
 PS1='[\u@\h \W]\$ '
-. "$HOME/.cargo/env"
 
-PATH=$PATH:~/.local/bin
-export PATH
-
-XDG_CONFIG_HOME=~/.config
-export XDG_CONFIG_HOME
-
-alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
+export XDG_CONFIG_HOME=~/.config
